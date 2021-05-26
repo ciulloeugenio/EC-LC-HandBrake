@@ -1,2 +1,41 @@
-# EC-LC-HandBrake
-Sketch per la creazione di un freno a mano con Loadcell e HX711
+/*
+
+
+╭━━━╮╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╭━━━╮╱╱╱╭╮╭╮
+┃╭━━╯╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱┃╭━╮┃╱╱╱┃┃┃┃
+┃╰━━┳╮╭┳━━┳━━┳━╮╭┳━━╮┃┃╱╰╋┳╮╭┫┃┃┃╭━━╮
+┃╭━━┫┃┃┃╭╮┃┃━┫╭╮╋┫╭╮┃┃┃╱╭╋┫┃┃┃┃┃┃┃╭╮┃
+┃╰━━┫╰╯┃╰╯┃┃━┫┃┃┃┃╰╯┃┃╰━╯┃┃╰╯┃╰┫╰┫╰╯┃
+╰━━━┻━━┻━╮┣━━┻╯╰┻┻━━╯╰━━━┻┻━━┻━┻━┻━━╯
+╱╱╱╱╱╱╱╭━╯┃
+╱╱╱╱╱╱╱╰━━╯
+
+
+███████╗░█████╗░  ██╗░░░░░░█████╗░  ██╗░░██╗░█████╗░███╗░░██╗██████╗░██████╗░██████╗░░█████╗░██╗░░██╗███████╗
+██╔════╝██╔══██╗  ██║░░░░░██╔══██╗  ██║░░██║██╔══██╗████╗░██║██╔══██╗██╔══██╗██╔══██╗██╔══██╗██║░██╔╝██╔════╝
+█████╗░░██║░░╚═╝  ██║░░░░░██║░░╚═╝  ███████║███████║██╔██╗██║██║░░██║██████╦╝██████╔╝███████║█████═╝░█████╗░░
+██╔══╝░░██║░░██╗  ██║░░░░░██║░░██╗  ██╔══██║██╔══██║██║╚████║██║░░██║██╔══██╗██╔══██╗██╔══██║██╔═██╗░██╔══╝░░
+███████╗╚█████╔╝  ███████╗╚█████╔╝  ██║░░██║██║░░██║██║░╚███║██████╔╝██████╦╝██║░░██║██║░░██║██║░╚██╗███████╗
+╚══════╝░╚════╝░  ╚══════╝░╚════╝░  ╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝╚═════╝░╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝╚══════╝
+
+Version 1.0
+Copyright (c) 2020 Eugenio Ciullo
+
+
+Questo sketch è stato creato da Eugenio Ciullo
+
+Installare nella Documents/Arduino directory la libreria ArduinoJoystickLibrary creata da MHeironimus reperibile al seguente link:
+https://github.com/MHeironimus/ArduinoJoystickLibrary
+
+
+Lo sketch per la Pedaliera è stato configurato per ricevere il segnale da 3 amplificatori HX711 per loadcell
+
+Collegare come segue:
+Cella Acceleratore:
+VCC -> VCC
+GND -> GND
+DOUT -> PIN3
+Clock -> PIN2
+
+
+*/
